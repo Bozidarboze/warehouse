@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  background-color: #eff5f8;
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+}

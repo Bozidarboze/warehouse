@@ -1,0 +1,49 @@
+erDiagram
+WAREHOUSES ||--o{ SHOPS: has
+WAREHOUSES {
+    int warehouseId PK
+    string name
+}
+
+SHOPS {
+    int shopId PK
+    int warehouseId FK
+    string locaiton
+}
+
+PRODUCTS ||--|{ WAREHOUSEPRODUCTS: has
+PRODUCTS {
+    int productId PK
+    string name
+    string category
+}
+
+WAREHOUSES ||--o{ WAREHOUSEPRODUCTS: has
+WAREHOUSEPRODUCTS {
+    int warehouseId FK
+    int productId FK
+    int quantity
+}
+
+SHOPS ||--o{ SHOPPRODUCTS: has
+SHOPPRODUCTS {
+    int shopId FK
+    int productId FK
+    int quantity
+}
+
+PRODUCTS ||--|{ SHOPPRODUCTS: has
+
+USERS {
+    int userId PK
+    string username
+    string passwordHash
+}
+
+LOGS {
+    int logId PK
+    string location
+    string message
+}
+
+            
