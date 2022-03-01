@@ -20,6 +20,11 @@ Clone this repository to your local machine.
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in your browser.
 
+### Default user to sign in
+
+Email: admin@gmail.com
+Password: 123
+
 ## API
 
 ### Database config
