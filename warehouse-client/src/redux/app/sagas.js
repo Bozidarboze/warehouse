@@ -149,7 +149,8 @@ function* signIn(action) {
     const message = response.data;
     yield put(signInSuccess(message));
   } catch (err) {
-    yield put(signInFailed(err));
+    const message = err.response ? err.response.data : "Failed to sign in!";
+    yield put(signInFailed(message));
   }
 }
 

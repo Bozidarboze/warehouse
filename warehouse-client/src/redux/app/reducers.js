@@ -92,7 +92,7 @@ export const authReducer = (state = initialAuthState, action = {}) => {
     case SIGN_IN_SUCCESS:
       return { ...state, loading: false, message: action.payload };
     case SIGN_IN_FAILED:
-      return { ...state, loading: false, message: "Failed to sign in" };
+      return { ...state, loading: false, message: action.payload };
     case LOG_OUT:
       return { ...state, message: { success: false } };
     default:
