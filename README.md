@@ -4,7 +4,7 @@
 
 Clone this repository to your local machine.
 
-### Client side
+## Client side
 
 ### Change link to server
 
