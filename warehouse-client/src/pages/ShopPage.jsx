@@ -78,7 +78,13 @@ const ShopPage = ({
             <Message message={addProductMessage.message} type={addProductMessage.type} onClick={resetMessage} />
           ) : null}
           {shopLocation === "Warehouse" ? (
-            <AddForm loading={loadingAddProduct} placeholder='Product Name' onClick={onAddProduct} onKeyUp={onPressEnter} />
+            <AddForm
+              loading={loadingAddProduct}
+              placeholder='Product Name'
+              buttonLabel='Add Product'
+              onClick={onAddProduct}
+              onKeyUp={onPressEnter}
+            />
           ) : null}
         </Container>
       ) : (

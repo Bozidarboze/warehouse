@@ -68,7 +68,7 @@ const ShopsListPage = ({
         <Container data-aos='fade' maxWidth='lg'>
           <ShopsList shops={shops} onChangeLocation={onChangeLocation} location={location} />
           {addShopMessage && location === "Add Shop" ? <Message message={addShopMessage.message} type={addShopMessage.type} /> : null}
-          <AddForm loading={addShopLoading} onClick={onAddShop} onKeyUp={onPressEnter} placeholder='Shop Location' />
+          <AddForm loading={addShopLoading} onClick={onAddShop} onKeyUp={onPressEnter} placeholder='Shop Location' buttonLabel='Add Shop' />
         </Container>
       ) : (
         <Loader />

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Box, Input, Button, CircularProgress } from "@mui/material";
 
-const AddForm = ({ loading, onClick, onKeyUp, placeholder }) => {
+const AddForm = ({ loading, onClick, onKeyUp, placeholder, buttonLabel }) => {
   const [name, setName] = useState("");
 
   const onNameChange = (e) => {
@@ -34,7 +34,7 @@ const AddForm = ({ loading, onClick, onKeyUp, placeholder }) => {
         }}
         variant='contained'
         sx={{ ml: 5 }}>
-        Add Shop
+        {buttonLabel}
       </Button>
     </Box>
   );
